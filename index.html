@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Filipino Racism & Boomer Logic Test (For Barkada)</title>
+  <meta name="description" content="Satirical, tongue-in-cheek Filipino-centered 'hot take' test. For private sharing only.">
+  <style>
+    :root{--accent:#d94f04;--bg:#fff8f0;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);margin:0;color:#222}
+    header{background:var(--accent);color:#fff;padding:1.1rem 1rem;text-align:center}
+    header h1{margin:0;font-size:1.25rem}
+    header p{margin:0.25rem 0 0;font-size:0.9rem;opacity:0.95}
+    main{max-width:900px;margin:1rem auto;padding:0 1rem}
+    .intro{background:var(--card);padding:0.85rem;border-radius:12px;border:1px solid rgba(0,0,0,0.05);box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:1rem}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}}
+    section.card{background:var(--card);padding:0.65rem;border-radius:10px;border:1px solid rgba(0,0,0,0.05)}
+    section.card h2{margin:0 0 0.5rem;color:var(--accent);font-size:1.05rem}
+    label.item{display:flex;align-items:flex-start;gap:10px;padding:0.5rem;border-radius:8px;margin-bottom:6px;background:linear-gradient(180deg,rgba(0,0,0,0.01),transparent);cursor:pointer}
+    input[type="checkbox"]{width:22px;height:22px;flex:0 0 22px;margin-top:3px}
+    .item .text{font-size:0.95rem;line-height:1.25}
+    .controls{margin-top:1rem;display:flex;gap:10px;flex-wrap:wrap}
+    button.primary{background:var(--accent);color:#fff;border:none;padding:0.9rem 1rem;border-radius:10px;font-weight:600;flex:1;min-width:160px}
+    button.secondary{background:#fff;border:1px solid rgba(0,0,0,0.08);padding:0.9rem;border-radius:10px;flex:1;min-width:160px}
+    #result{margin-top:1rem;padding:0.9rem;border-radius:10px;background:#fff3e0;border:1px solid rgba(0,0,0,0.04);font-weight:700;text-align:center}
+    footer{max-width:900px;margin:1rem auto 3rem;padding:0 1rem;color:#666;font-size:0.9rem}
+    .muted{opacity:0.85;font-weight:500}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Filipino Racism & Boomer Logic Test</h1>
+    <p>Satire lang. Pang-barkada. Private sharing only.</p>
+  </header>
+
+  <main>
+    <div class="intro">
+      <p class="muted">Check all that apply. This is for laughs — questions are intentionally provocative and over-the-top. Count 1 point per checked box and get your result.</p>
+    </div>
+
+    <form id="testForm" onsubmit="return false;">
+
+      <div class="grid">
+        <section class="card">
+          <h2>Regional Stereotypes</h2>
+          <label class="item"><input type="checkbox" name="q" value="1"><span class="text">Do you think all Ilocanos are kuripot to the point they recycle tissue?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="2"><span class="text">Have you ever said “Eh kasi probinsyano” to explain someone’s behavior?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="3"><span class="text">Do you assume all Bicolanos eat sili like candy?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="4"><span class="text">Do you believe all Kapampangans are good at cooking and arrogant about it?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="5"><span class="text">Do you think all people from Mindanao live in unsafe areas?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="6"><span class="text">Have you ever called someone “promdi” as an insult?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="7"><span class="text">Do you assume all Bisaya are loud?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="8"><span class="text">Do you assume people from Batangas are always galit?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="9"><span class="text">Do you believe Cebuanos think they’re better than Manileños?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="10"><span class="text">Have you ever avoided a place because you heard it’s “maraming Muslim”?</span></label>
+        </section>
+
+        <section class="card">
+          <h2>Colorism & Physical Features</h2>
+          <label class="item"><input type="checkbox" name="q" value="11"><span class="text">Have you ever called someone “Negra” or “Negrito” as a joke?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="12"><span class="text">Do you believe maputi = mas malinis?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="13"><span class="text">Have you told someone not to play outside so they won’t get dark?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="14"><span class="text">Do you assume kulot hair is “magulo” or “pang-probinsya”?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="15"><span class="text">Do you believe fair-skinned = mayaman o may lahing foreigner?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="16"><span class="text">Have you teased someone for being pango?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="17"><span class="text">Do you think tall mestizas are automatically pang-beauty queen?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="18"><span class="text">Have you ever assumed darker-skinned Pinoys must be from the province?</span></label>
+        </section>
+
+        <section class="card">
+          <h2>Language Bias</h2>
+          <label class="item"><input type="checkbox" name="q" value="19"><span class="text">Have you ever judged someone for having a deep Visayan accent in Manila?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="20"><span class="text">Do you think “pure Tagalog” is the only correct way to speak?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="21"><span class="text">Have you made fun of Kapampangan “l” sounds?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="22"><span class="text">Do you avoid people who speak deep Waray because “parang galit”?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="23"><span class="text">Do you believe people from probinsya should “learn proper Manila Tagalog”?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="24"><span class="text">Have you rolled your eyes when someone mispronounces English words?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="25"><span class="text">Do you think people who don’t speak English fluently are less smart?</span></label>
+        </section>
+
+        <section class="card">
+          <h2>Class & Status Bias</h2>
+          <label class="item"><input type="checkbox" name="q" value="26"><span class="text">Have you called someone “jologs” for wearing Divisoria clothes?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="27"><span class="text">Have you teased someone for being “squatter”?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="28"><span class="text">Do you think public school students are automatically less smart?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="29"><span class="text">Have you judged someone for not having branded shoes/clothes?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="30"><span class="text">Have you said “mag-aaral ka kasi” to someone working a blue-collar job?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="31"><span class="text">Do you assume jeepney drivers are always bad drivers?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="32"><span class="text">Have you laughed at sari-sari store setups that look “baduy”?</span></label>
+        </section>
+
+        <section class="card">
+          <h2>Pop Culture & Food Wars</h2>
+          <label class="item"><input type="checkbox" name="q" value="33"><span class="text">Have you said your city’s fiesta is the best and others are boring?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="34"><span class="text">Have you dismissed indie films as “pang-arte”?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="35"><span class="text">Do you believe teleseryes from certain regions are “baduy”?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="36"><span class="text">Have you judged someone’s music taste for being “too masa”?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="37"><span class="text">Have you ever started a fight over Jollibee vs. McDo superiority?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="38"><span class="text">Do you believe adobo from your region is the “real” adobo?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="39"><span class="text">Have you laughed at people eating rice with spaghetti?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="40"><span class="text">(Sinigang conundrum) Do you insist that only pork sinigang is "real" sinigang and anything else (tamarind fish, beef, or veggies-only) is blasphemy?</span></label>
+        </section>
+
+        <section class="card">
+          <h2>Pinoy Boomer Logic™</h2>
+          <label class="item"><input type="checkbox" name="q" value="41"><span class="text">You’ve said “Naku, wala nang disiplina ang kabataan ngayon.”</span></label>
+          <label class="item"><input type="checkbox" name="q" value="42"><span class="text">You think millennials and Gen Z are “masyadong marupok.”</span></label>
+          <label class="item"><input type="checkbox" name="q" value="43"><span class="text">You’ve said “Noong panahon namin, mas mahirap pero mas masipag kami.”</span></label>
+          <label class="item"><input type="checkbox" name="q" value="44"><span class="text">You believe tattoos make someone “masamang tao.”</span></label>
+          <label class="item"><input type="checkbox" name="q" value="45"><span class="text">You think dyed hair means “walang direksyon sa buhay.”</span></label>
+          <label class="item"><input type="checkbox" name="q" value="46"><span class="text">You believe the best cure for colds is Vicks and tsinelas.</span></label>
+          <label class="item"><input type="checkbox" name="q" value="47"><span class="text">You’ve said “Hindi uso depression dati, gawa-gawa lang yan ngayon.”</span></label>
+          <label class="item"><input type="checkbox" name="q" value="48"><span class="text">You think people should always say “po” and “opo” to be respectful.</span></label>
+          <label class="item"><input type="checkbox" name="q" value="49"><span class="text">You think wearing shorts sa simbahan is a mortal sin.</span></label>
+          <label class="item"><input type="checkbox" name="q" value="50"><span class="text">You’ve compared today’s music to “mas maganda pa noong 80s.”</span></label>
+        </section>
+
+        <section class="card">
+          <h2>Politics & Hot Takes</h2>
+          <label class="item"><input type="checkbox" name="q" value="51"><span class="text">Do you think “Dapat ibalik ang Martial Law para umayos ang bansa” is a valid opinion?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="52"><span class="text">Have you said “Eh di mag-OFW ka para umasenso” to someone?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="53"><span class="text">Do you believe all activists are bayaran?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="54"><span class="text">Have you judged disaster victims for “hindi paghahanda”?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="55"><span class="text">Do you think “Wala talagang pag-asa ang Pilipinas” is an intelligent take?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="56"><span class="text">Have you said “Lahat ng politiko pare-pareho lang” and left it at that?</span></label>
+        </section>
+
+      </div> <!-- grid -->
+
+      <div class="controls">
+        <button class="primary" id="calcBtn" type="button">Calculate My Racist Level</button>
+        <button class="secondary" id="resetBtn" type="button">Reset</button>
+      </div>
+
+      <div id="result" aria-live="polite" hidden></div>
+
+    </form>
+
+  </main>
+
+  <footer>
+    <p><strong>Note:</strong> This quiz is satire for a private circle. It intentionally exaggerates Filipino stereotypes and boomer logic for comedic effect. Don’t post it publicly without context.</p>
+  </footer>
+
+  <script>
+    const calcBtn = document.getElementById('calcBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    const resultDiv = document.getElementById('result');
+
+    function calculate() {
+      const checked = document.querySelectorAll('#testForm input[type="checkbox"]:checked');
+      const score = checked.length;
+
+      let tier = '';
+      if (score <= 10) {
+        tier = 'BAIT-BAITAN?';
+      } else if (score <= 25) {
+        tier = 'Hmmm. Okay, mabait konti pero papunta na dun';
+      } else if (score <= 40) {
+        tier = 'WOW RACIST AH';
+      } else {
+        tier = 'Malapit ka na maging Pinoy Boomer. Grabe kang racist ka?';
+      }
+
+      resultDiv.hidden = false;
+      resultDiv.innerHTML = `Score: ${score} — <span style="color:var(--accent);">${tier}</span>`;
+      resultDiv.scrollIntoView({behavior:'smooth',block:'center'});
+    }
+
+    calcBtn.addEventListener('click', calculate);
+    resetBtn.addEventListener('click', ()=>{
+      document.querySelectorAll('#testForm input[type="checkbox"]').forEach(cb=>cb.checked=false);
+      resultDiv.hidden = true;
+      resultDiv.innerHTML = '';
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  </script>
+
+</body>
+</html>
