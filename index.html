@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Filipino Racism & Boomer Logic Test (For Barkada)</title>
+  <title>Filipino Racism, Boomer Logic and Kasamaan Test (For Barkada)</title>
   <meta name="description" content="Satirical, tongue-in-cheek Filipino-centered 'hot take' test. For private sharing only.">
   <style>
     :root{--accent:#d94f04;--bg:#fff8f0;--card:#ffffff}
@@ -135,7 +135,7 @@
           <!-- MOVED: the three new questions are placed here (Politics) as you requested -->
           <label class="item"><input type="checkbox" name="q" value="73"><span class="text">Do you believe that Tatay Digong must be brought home?</span></label>
           <label class="item"><input type="checkbox" name="q" value="74"><span class="text">Do you believe that the Marcoses own several gold bars?</span></label>
-          <label class="item"><input type="checkbox" name="q" value="75"><span class="text">Do you believe Atong Ang is behind the Los Sabongeros?</span></label>
+          <label class="item"><input type="checkbox" name="q" value="75"><span class="text">Do you believe Atong Ang is behind the Lost Sabongeros?</span></label>
         </section>
 
         <section class="card">
@@ -180,14 +180,14 @@
       const score = checked.length;
 
       let tier = '';
-      if (score <= 10) {
+      if (score <= 24) {
         tier = 'BAIT-BAITAN?';
-      } else if (score <= 25) {
-        tier = 'Hmmm. Okay, mabait konti pero papunta na dun';
-      } else if (score <= 40) {
-        tier = 'WOW RACIST AH';
+      } else if (score <= 45) {
+        tier = 'Hmmm. Okay, mabait ka pa nang konti pero pasasaan pa at sasama ka rin';
+      } else if (score <= 65) {
+        tier = 'WOW ANG SAMA NG UGALI';
       } else {
-        tier = 'WELL DONE! Mas racist ka kesa kay Waldu at Moca';
+        tier = 'WELL DONE! Mas racist ka at mas masama ugali kesa kay Waldu at Moca';
       }
 
       resultDiv.hidden = false;
