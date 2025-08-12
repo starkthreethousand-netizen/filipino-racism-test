@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filipino Racism Hot Take Test</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  header {
+    background-color: #d94f04;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  h2 {
+    margin-top: 2rem;
+    color: #d94f04;
+  }
+  label {
+    display: block;
+    background: #fff;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.3);
+  }
+  button {
+    background-color: #d94f04;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  button:hover {
+    background-color: #b53f02;
+  }
+  #result {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #fff3e0;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Filipino Racism Hot Take Test</h1>
+  <p>Satirical, pang-asar lang sa tropa. Don’t take it seriously!</p>
+</header>
+
+<main>
+  <form id="racismTest">
+    
+    <h2>Language Bias</h2>
+    <label><input type="checkbox"> Have you ever said “Ang pangit ng accent niya” about a fellow Pinoy?</label>
+    <label><input type="checkbox"> Do you think Tagalog is the only “tamang” Filipino language?</label>
+    <label><input type="checkbox"> Have you laughed at someone’s deep Bisaya accent?</label>
+    <label><input type="checkbox"> Have you ever mocked a Kapampangan “l” sound?</label>
+    <label><input type="checkbox"> Do you assume Batangueños are always galit?</label>
+
+    <h2>Regional Stereotypes</h2>
+    <label><input type="checkbox"> Do you assume all Ilocanos are kuripot?</label>
+    <label><input type="checkbox"> Have you ever called someone “promdi” as an insult?</label>
+    <label><input type="checkbox"> Do you think all Mindanao areas are unsafe?</label>
+    <label><input type="checkbox"> Have you ever joked that all Bicolanos love sili?</label>
+    <label><input type="checkbox"> Do you believe Kapampangans are automatically great cooks?</label>
+
+    <h2>Colorism</h2>
+    <label><input type="checkbox"> Have you ever called someone “Negra/Negrito” as a joke?</label>
+    <label><input type="checkbox"> Do you assume fair-skinned people are richer or more attractive?</label>
+    <label><input type="checkbox"> Have you told someone to avoid the sun para ‘di umitim?</label>
+    <label><input type="checkbox"> Do you think maputi = mas malinis?</label>
+    <label><input type="checkbox"> Have you ever teased someone for being “kulot”?</label>
+
+    <h2>Class & Status Bias</h2>
+    <label><input type="checkbox"> Have you called someone “jologs” for their clothes?</label>
+    <label><input type="checkbox"> Have you judged someone for not speaking English well?</label>
+    <label><input type="checkbox"> Do you think public school students are less smart?</label>
+    <label><input type="checkbox"> Have you made fun of “sosyal” accents?</label>
+    <label><input type="checkbox"> Have you teased someone for being “squatter”?</label>
+
+    <h2>Pop Culture Bias</h2>
+    <label><input type="checkbox"> Have you argued that your city’s basketball team is the best and everyone else is basura?</label>
+    <label><input type="checkbox"> Do you think your local fiesta is “pinakamaganda” and others are boring?</label>
+    <label><input type="checkbox"> Have you laughed at indie films for being “pang-arte”? </label>
+    <label><input type="checkbox"> Do you think teleseryes from other regions are “baduy”?</label>
+    <label><input type="checkbox"> Have you judged someone’s music taste for being “too masa”?</label>
+
+    <button type="button" onclick="calculateScore()">Calculate My Racist Level</button>
+  </form>
+
+  <div id="result"></div>
+</main>
+
+<script>
+function calculateScore() {
+  let checkboxes = document.querySelectorAll('#racismTest input[type="checkbox"]');
+  let score = 0;
+  checkboxes.forEach(cb => { if (cb.checked) score++; });
+
+  let resultText = "";
+  if (score <= 5) {
+    resultText = "✨ Maka-Kapwa Citizen – You see people as people. Mabuhay ka!";
+  } else if (score <= 10) {
+    resultText = "😏 Petty Patriot – Konting bias lang, pero wala namang masyadong harm.";
+  } else if (score <= 15) {
+    resultText = "😂 Tito/Tita ng Bayan – You joke a lot, minsan borderline!";
+  } else {
+    resultText = "🚨 Certified Racist Taho Vendor – Relax! Puro ka pang-aasar!";
+  }
+
+  document.getElementById("result").innerText = `Score: ${score} – ${resultText}`;
+}
+</script>
+
+</body>
+</html>
